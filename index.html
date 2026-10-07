@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swadaya Notebook Store | Laptop, servis, dan sparepart</title>
+<meta name="description" content="Swadaya Notebook Store: laptop gaming, harian, dan editing dari berbagai merek, plus servis hardware, servis software, dan sparepart laptop.">
+<meta name="theme-color" content="#2B35F5">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Swadaya Notebook Store">
+<meta property="og:description" content="Laptop untuk gaming, harian, dan editing. Tersedia juga servis hardware, software, dan sparepart laptop.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232B35F5'/%3E%3Crect x='7' y='9' width='18' height='12' rx='2' fill='none' stroke='%23FFD93D' stroke-width='2.5'/%3E%3Crect x='4.5' y='22.5' width='23' height='3' rx='1.5' fill='%23FFD93D'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ComputerStore","name":"Swadaya Notebook Store","email":"dedycipunjur@gmail.com","telephone":["+6281808090464","+628987370165"],"hasMap":"https://maps.app.goo.gl/JW3Zf19A5umssGeo7"}
+</script>
+<script>document.documentElement.classList.add("js");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #2B35F5;
+    --ink: #10122B;
+    --paper: #F3F5FF;
+    --yellow: #FFD93D;
+    --muted: #4A5070;
+    --pink: #FF5CA8;  --pink-t: #FFD9EB;
+    --sky: #3DB8FF;   --sky-t: #D3EEFF;
+    --orange: #FF7A3D; --orange-t: #FFE0D0;
+    --b: 2px solid var(--ink);
+    --sh: 5px 5px 0 var(--ink);
+    --sh-s: 3px 3px 0 var(--ink);
+    --display: "Bricolage Grotesque", "Arial Black", "Segoe UI", sans-serif;
+    --body: "Instrument Sans", "Segoe UI", Roboto, Arial, sans-serif;
+    --mono: "DM Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  img, svg { max-width: 100%; }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+  .hero :focus-visible, .contact :focus-visible, footer :focus-visible { outline-color: var(--yellow); }
+  .wrap { width: min(1140px, 100% - 36px); margin-inline: auto; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .skip { position: absolute; left: 12px; top: -60px; background: var(--yellow); border: var(--b); padding: 8px 14px; border-radius: 8px; z-index: 50; }
+  .skip:focus { top: 12px; }
+
+  /* Tombol dan chip */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font: 600 16px var(--body); text-decoration: none; cursor: pointer; text-align: center;
+    padding: 12px 22px; border: var(--b); border-radius: 12px;
+    background: var(--yellow); color: var(--ink); box-shadow: var(--sh-s);
+    transition: transform .12s, box-shadow .12s;
+  }
+  .btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--ink); }
+  .btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
+  .btn.white { background: #fff; }
+  .btn.blue { background: var(--blue); color: #fff; }
+  .btn.sm { padding: 7px 14px; font-size: 15px; }
+  .btn[disabled] { opacity: .45; cursor: not-allowed; transform: none; box-shadow: var(--sh-s); }
+  .chip, .opt, .seg button {
+    font: 500 15.5px var(--body); color: var(--ink); cursor: pointer;
+    padding: 7px 15px; border: var(--b); border-radius: 999px; background: #fff;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: transform .1s, box-shadow .1s, background .1s;
+  }
+  .chip:hover, .opt:hover, .seg button:hover { transform: translate(-1px, -1px); box-shadow: 2px 2px 0 var(--ink); }
+  .chip[aria-pressed="true"], .opt[aria-pressed="true"], .seg button[aria-pressed="true"] { background: var(--yellow); box-shadow: 2px 2px 0 var(--ink); font-weight: 600; }
+  .dot { width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--ink); background: var(--c, #fff); display: inline-block; flex: none; }
+  [data-need="gaming"], .gaming { --c: var(--pink); --t: var(--pink-t); }
+  [data-need="harian"], .harian { --c: var(--sky); --t: var(--sky-t); }
+  [data-need="editing"], .editing { --c: var(--orange); --t: var(--orange-t); }
+
+  /* Pita info dan header */
+  .notice { background: var(--ink); color: #fff; font-size: 14.5px; }
+  .notice .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 18px; padding: 7px 0; }
+  .notice b { color: var(--yellow); font-weight: 600; }
+  .site-header { position: sticky; top: 0; z-index: 30; background: #fff; border-bottom: var(--b); }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 66px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; line-height: 1.05; }
+  .brand-mark { width: 38px; height: 38px; flex: none; }
+  .brand strong { display: block; font: 800 19px/1.05 var(--display); letter-spacing: -.02em; }
+  @media (max-width: 560px) { .brand strong { font-size: 16px; max-width: 150px; } }
+  .nav .btn { white-space: nowrap; }
+  .brand small { font: 500 12.5px var(--mono); color: var(--muted); }
+  .nav { display: flex; align-items: center; gap: 6px; font-weight: 500; }
+  .nav a:not(.btn) { text-decoration: none; padding: 8px 12px; border-radius: 8px; }
+  .nav a:not(.btn):hover { background: var(--yellow); }
+  @media (max-width: 760px) { .nav a:not(.btn) { display: none; } .brand small { display: none; } }
+  @media (max-width: 560px) { .notice .wrap > span:last-child { display: none; } }
+
+  /* Hero */
+  .hero {
+    background-color: var(--blue); color: #fff; border-bottom: var(--b);
+    background-image: radial-gradient(rgba(255,255,255,.22) 1.5px, transparent 1.6px);
+    background-size: 24px 24px; padding: 52px 0 112px;
+  }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; align-items: center; }
+  .hero h1 { font: 800 clamp(40px, 6.4vw, 78px)/1.02 var(--display); letter-spacing: -.035em; margin: 0 0 18px; text-wrap: balance; }
+  mark { background: var(--yellow); color: var(--ink); padding: 0 .14em; border-radius: 8px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .hero .lead { font-size: 19px; max-width: 50ch; color: #E3E6FF; margin: 0 0 26px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; }
+  .stat { background: rgba(255,255,255,.12); border: 2px solid rgba(255,255,255,.55); border-radius: 12px; padding: 6px 14px; font-size: 15px; }
+  .stat b { font: 800 22px var(--display); margin-right: 6px; }
+  a.stat { text-decoration: none; color: #fff; }
+  a.stat:hover { background: rgba(255,255,255,.24); }
+  .stage { position: relative; width: 100%; max-width: 520px; margin-inline: auto; }
+  .stage .disc { position: absolute; left: 15%; top: -6%; width: 70%; aspect-ratio: 1; background: var(--yellow); border: var(--b); border-radius: 50%; }
+  .stage > svg { position: relative; width: 100%; height: auto; display: block; filter: drop-shadow(6px 8px 0 rgba(16,18,43,.35)); }
+  .stage .screen { opacity: 0; transition: opacity .35s ease; }
+  .stage .screen.on { opacity: 1; }
+  .sticker { position: absolute; font: 800 16px var(--display); padding: 7px 14px; border: var(--b); border-radius: 10px; box-shadow: var(--sh-s); color: var(--ink); transform: rotate(var(--r)); }
+  .sticker.s1 { top: 3%; right: -1%; background: var(--pink); --r: 6deg; }
+  .sticker.s2 { bottom: 24%; left: -2%; background: #fff; --r: -5deg; }
+  .seg { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 28px; position: relative; z-index: 2; }
+  @media (max-width: 880px) {
+    .hero { padding: 36px 0 104px; }
+    .hero .wrap { grid-template-columns: 1fr; }
+    .stage { max-width: 400px; margin-top: 8px; }
+    .sticker { font-size: 14px; }
+  }
+
+  /* Pencari laptop */
+  .finder { margin-top: -64px; position: relative; z-index: 2; }
+  .finder-card { background: #fff; border: var(--b); border-radius: 22px; box-shadow: 8px 8px 0 var(--ink); padding: 28px; display: grid; grid-template-columns: .85fr 1.15fr; gap: 30px; }
+  .tag-label { display: inline-block; font: 500 13px var(--mono); background: var(--yellow); border: var(--b); border-radius: 8px; padding: 1px 10px; margin-bottom: 10px; }
+  .finder h2 { font: 800 clamp(26px, 3.4vw, 36px)/1.08 var(--display); letter-spacing: -.02em; margin: 0 0 8px; }
+  .finder .sub { color: var(--muted); margin: 0 0 20px; }
+  .q-title { font: 500 13.5px var(--mono); color: var(--muted); margin: 0 0 8px; }
+  .q-group { margin-bottom: 18px; }
+  .opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .results { display: grid; gap: 12px; align-content: start; }
+  .res { display: grid; grid-template-columns: 104px 1fr; gap: 14px; align-items: center; text-align: left; width: 100%; background: var(--t, var(--paper)); border: var(--b); border-radius: 16px; padding: 10px 14px 10px 10px; cursor: pointer; font: inherit; color: inherit; transition: transform .12s, box-shadow .12s; }
+  .res:hover, .res:focus-visible { transform: translate(-2px, -2px); box-shadow: var(--sh-s); }
+  .res-art { background: #fff; border: var(--b); border-radius: 10px; padding: 6px; }
+  .res-name { font: 800 18px/1.2 var(--display); display: block; }
+  .res-spec { font-size: 14px; color: var(--muted); display: block; line-height: 1.4; }
+  .res-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 14.5px; }
+  .res-meta b { font-family: var(--display); font-size: 17px; }
+  .res-empty { background: var(--paper); border: 2px dashed var(--ink); border-radius: 16px; padding: 22px; color: var(--muted); }
+  .res-more { margin-top: 4px; }
+  @media (max-width: 880px) { .finder-card { grid-template-columns: 1fr; padding: 22px; } }
+  @media (max-width: 440px) { .res { grid-template-columns: 84px 1fr; } }
+
+  /* Marquee merek */
+  .marquee { background: var(--ink); color: #fff; overflow: hidden; border-block: var(--b); margin-top: 72px; padding: 14px 0; }
+  .marquee-track { display: flex; width: max-content; animation: scroll 46s linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  .marquee-track span { font: 800 30px var(--display); letter-spacing: -.01em; padding: 0 30px; display: flex; align-items: center; gap: 60px; white-space: nowrap; }
+  .marquee-track span::after { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--yellow); }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+
+  /* Section umum */
+  section.block { padding: 76px 0; }
+  .sec-head { margin-bottom: 28px; max-width: 62ch; }
+  .sec-head h2 { font: 800 clamp(30px, 4.6vw, 48px)/1.05 var(--display); letter-spacing: -.03em; margin: 0 0 10px; text-wrap: balance; }
+  .sec-head p { margin: 0; color: var(--muted); font-size: 18px; }
+
+  /* Katalog */
+  .f-title { font: 500 13.5px var(--mono); color: var(--muted); margin: 0 0 8px; }
+  .f-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px; }
+  .tools input, .tools select { font: 500 16px var(--body); padding: 10px 14px; border-radius: 12px; border: var(--b); background: #fff; color: var(--ink); }
+  .tools input { flex: 1 1 260px; min-width: 0; }
+  .tools select { flex: 0 1 210px; }
+  .tools input:focus, .tools select:focus { outline: none; box-shadow: var(--sh-s); }
+  .count-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; color: var(--muted); font: 500 14.5px var(--mono); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(262px, 1fr)); gap: 24px; }
+  .card { background: #fff; border: var(--b); border-radius: 18px; box-shadow: var(--sh); display: flex; flex-direction: column; overflow: hidden; transition: transform .15s, box-shadow .15s; }
+  .card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--ink); }
+  .card-main { display: flex; flex-direction: column; text-align: left; background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; flex: 1; width: 100%; }
+  .card-main:focus-visible { outline-offset: -5px; }
+  .card-art { display: block; width: 100%; background: var(--t); border-bottom: var(--b); padding: 14px 22px 8px; }
+  .card-art svg, .card-art img { display: block; width: 100%; height: auto; }
+  .card-body { padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; width: 100%; }
+  .card-brand { font: 500 13px var(--mono); color: var(--muted); }
+  .cond { display: inline-block; margin-left: 8px; font: 600 12px var(--body); padding: 0 8px; border: 2px solid var(--ink); border-radius: 999px; background: var(--yellow); color: var(--ink); }
+  .card-name { font: 800 21px/1.15 var(--display); letter-spacing: -.01em; }
+  .card-spec { font-size: 14.5px; color: var(--muted); line-height: 1.45; }
+  .card-foot { margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .price { font: 800 19px var(--display); }
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; }
+  .tag { font: 600 12.5px var(--body); padding: 1px 10px; border: 2px solid var(--ink); border-radius: 999px; background: var(--t); }
+  .cmp { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-top: 2px dashed var(--ink); font-size: 14.5px; font-weight: 500; cursor: pointer; }
+  .cmp input { width: 18px; height: 18px; accent-color: var(--blue); cursor: pointer; }
+  .empty { grid-column: 1 / -1; padding: 40px 20px; text-align: center; color: var(--muted); background: #fff; border: 2px dashed var(--ink); border-radius: 18px; }
+  .empty .chip { margin-top: 14px; }
+
+  /* Perbandingan: bar bawah */
+  .cmp-bar { position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: none; align-items: center; flex-wrap: wrap; gap: 8px 12px; background: var(--ink); color: #fff; border-radius: 14px; padding: 10px 12px 10px 16px; box-shadow: var(--sh-s); max-width: calc(100% - 32px); }
+  .cmp-bar.show { display: flex; }
+  .cmp-bar .btn { box-shadow: none; }
+  .cmp-bar .note { font-size: 14px; color: var(--yellow); }
+  @media (max-width: 640px) { .cmp-bar { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); right: 16px; } }
+
+  /* Layanan */
+  .svc-wrap { background: var(--yellow); border-block: var(--b); }
+  .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+  .svc { background: #fff; border: var(--b); border-radius: 18px; box-shadow: var(--sh); overflow: hidden; }
+  .svc-head { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: var(--b); font: 800 22px var(--display); letter-spacing: -.01em; }
+  .svc-head svg { width: 30px; height: 30px; flex: none; }
+  .svc:nth-child(1) .svc-head { background: var(--sky-t); }
+  .svc:nth-child(2) .svc-head { background: var(--pink-t); }
+  .svc:nth-child(3) .svc-head { background: var(--orange-t); }
+  .svc p { margin: 0; padding: 16px 20px 0; color: var(--muted); }
+  .svc ul { margin: 0; padding: 12px 20px 20px 42px; }
+  .svc li { margin-bottom: 6px; }
+  .parts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; align-items: center; }
+  .parts .q-title { margin: 0 6px 0 0; color: var(--ink); }
+  .part { border: var(--b); background: #fff; border-radius: 999px; padding: 4px 14px; font-weight: 500; font-size: 15.5px; }
+  .svc-cta { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px; }
+  .svc-cta span { font-weight: 600; margin-right: 6px; }
+
+  /* Kenapa */
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+  .why { background: #fff; border: var(--b); border-radius: 18px; box-shadow: var(--sh); padding: 24px 22px; }
+  .why .ic { width: 52px; height: 52px; border: var(--b); border-radius: 14px; display: grid; place-items: center; margin-bottom: 14px; background: var(--c); }
+  .why:nth-child(1) { --c: var(--pink-t); } .why:nth-child(2) { --c: var(--sky-t); } .why:nth-child(3) { --c: var(--orange-t); }
+  .why h3 { font: 800 22px/1.15 var(--display); letter-spacing: -.01em; margin: 0 0 6px; }
+  .why p { margin: 0; color: var(--muted); }
+
+  /* FAQ */
+  .faq-wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 40px; align-items: start; }
+  .faq-wrap .sec-head { position: sticky; top: 96px; }
+  .faq { display: grid; gap: 12px; }
+  .faq details { background: #fff; border: var(--b); border-radius: 14px; padding: 0 18px; }
+  .faq details[open] { box-shadow: var(--sh-s); }
+  .faq summary { cursor: pointer; padding: 16px 0; font: 700 18px var(--display); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font: 800 24px/1 var(--display); flex: none; width: 30px; height: 30px; display: grid; place-items: center; border: var(--b); border-radius: 50%; background: var(--yellow); }
+  .faq details[open] summary::after { content: "\2212"; }
+  .faq details p { margin: 0 0 16px; color: var(--muted); }
+  .faq details p a { color: var(--blue); font-weight: 600; }
+  @media (max-width: 860px) { .faq-wrap { grid-template-columns: 1fr; gap: 10px; } .faq-wrap .sec-head { position: static; } }
+
+  /* Kontak */
+  .contact { background-color: var(--blue); color: #fff; border-top: var(--b); background-image: radial-gradient(rgba(255,255,255,.22) 1.5px, transparent 1.6px); background-size: 24px 24px; }
+  .contact .sec-head p { color: #E3E6FF; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  .infos { display: grid; gap: 16px; }
+  .info, .formcard { background: #fff; color: var(--ink); border: var(--b); border-radius: 18px; box-shadow: var(--sh); padding: 18px 20px; }
+  .info .q-title { margin-bottom: 4px; }
+  .info .val { font: 800 clamp(19px, 3vw, 24px)/1.2 var(--display); letter-spacing: -.01em; text-decoration: none; word-break: break-word; display: inline-block; }
+  .info .val:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .info .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .info p { margin: 4px 0 0; color: var(--muted); }
+  .formcard h3 { font: 800 26px/1.1 var(--display); margin: 0 0 6px; letter-spacing: -.01em; }
+  .formcard > p { margin: 0 0 16px; color: var(--muted); }
+  form.contact-form { display: grid; gap: 14px; }
+  form.contact-form label { font-weight: 600; font-size: 15px; display: grid; gap: 6px; }
+  form.contact-form input, form.contact-form textarea { font: 500 16px var(--body); padding: 11px 14px; border-radius: 12px; border: var(--b); background: var(--paper); color: var(--ink); width: 100%; }
+  form.contact-form textarea { min-height: 120px; resize: vertical; }
+  form.contact-form input:focus, form.contact-form textarea:focus { outline: none; box-shadow: var(--sh-s); background: #fff; }
+  .form-note { font-size: 14px; color: var(--muted); margin: 0; }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  footer.site-footer { background: var(--ink); color: #C9CDE8; padding: 40px 0 100px; border-top: var(--b); }
+  footer .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
+  footer .brand strong { color: #fff; } footer .brand small { color: #9AA0C4; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
+  footer nav a { text-decoration: none; } footer nav a:hover { color: var(--yellow); text-decoration: underline; text-underline-offset: 4px; }
+  footer .copy { width: 100%; font-size: 14.5px; border-top: 1px solid rgba(255,255,255,.18); padding-top: 18px; }
+
+  /* Tombol WhatsApp melayang */
+  .wa-fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .wa-fab-btn { display: inline-flex; align-items: center; gap: 8px; font: 600 16px var(--body); color: #fff; background: #0F8A47; border: var(--b); border-radius: 14px; padding: 11px 18px; cursor: pointer; box-shadow: var(--sh-s); }
+  .wa-fab-btn:hover { background: #0c723b; }
+  .wa-menu { display: none; flex-direction: column; gap: 4px; background: #fff; border: var(--b); border-radius: 14px; padding: 8px; box-shadow: var(--sh-s); }
+  .wa-menu.open { display: flex; }
+  .wa-menu a { text-decoration: none; padding: 10px 14px; border-radius: 8px; font-weight: 600; white-space: nowrap; }
+  .wa-menu a:hover { background: var(--yellow); }
+  .wa-menu small { display: block; color: var(--muted); font: 400 13.5px var(--mono); }
+
+  /* Dialog */
+  dialog.modal { width: min(860px, 100% - 24px); max-height: calc(100vh - 28px); padding: 0; border: var(--b); border-radius: 22px; background: #fff; color: var(--ink); box-shadow: 10px 10px 0 var(--ink); overflow: auto; }
+  dialog.modal.wide { width: min(1040px, 100% - 24px); }
+  dialog.modal::backdrop { background: rgba(16,18,43,.62); }
+  dialog.modal[open] { animation: pop .2s ease-out; }
+  @keyframes pop { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+  .close-btn { position: sticky; top: 12px; float: right; margin: 12px 12px -52px 0; z-index: 3; width: 42px; height: 42px; border-radius: 50%; border: var(--b); background: var(--yellow); font-size: 24px; line-height: 1; cursor: pointer; color: var(--ink); box-shadow: 2px 2px 0 var(--ink); }
+  .detail-top { display: grid; grid-template-columns: 1fr 1.1fr; gap: 24px; padding: 28px; }
+  .detail-art { background: var(--t); border: var(--b); border-radius: 16px; padding: 22px 20px 14px; align-self: start; }
+  .detail-art svg, .detail-art img { display: block; width: 100%; height: auto; }
+  .detail .brand-line { font: 500 14px var(--mono); color: var(--muted); margin: 0 0 6px; padding-right: 50px; }
+  .detail h3 { font: 800 clamp(26px, 4vw, 34px)/1.05 var(--display); letter-spacing: -.02em; margin: 0 0 10px; }
+  .detail .price-big { font: 800 30px var(--display); margin: 14px 0 0; }
+  .detail .summary { margin: 8px 0 0; color: var(--muted); }
+  .d-sec { padding: 0 28px 24px; }
+  .d-sec h4 { font: 800 21px var(--display); margin: 0 0 12px; }
+  .needs { display: grid; gap: 12px; }
+  .need-row { display: grid; grid-template-columns: 110px 1fr; gap: 6px 16px; align-items: start; background: var(--t); border: var(--b); border-radius: 14px; padding: 12px 14px; }
+  .need-row .label { font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .meter { display: flex; gap: 4px; margin-bottom: 4px; }
+  .meter b { height: 10px; flex: 1; max-width: 40px; border: 2px solid var(--ink); border-radius: 4px; background: #fff; }
+  .meter b.fill { background: var(--ink); }
+  .need-row .verdict { font-weight: 700; font-size: 15px; }
+  .need-row .desc { color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+  table.specs { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+  table.specs th, table.specs td { text-align: left; padding: 10px 0; border-bottom: 2px dashed var(--ink); vertical-align: top; }
+  table.specs th { width: 36%; font: 500 14px var(--mono); color: var(--muted); padding-right: 12px; }
+  .d-acts { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 28px 28px; }
+  .cmp-table-wrap { overflow-x: auto; padding: 0 28px 28px; }
+  table.cmp-table { border-collapse: collapse; min-width: 640px; width: 100%; font-size: 15px; }
+  table.cmp-table th, table.cmp-table td { padding: 10px 12px; border: 2px solid var(--ink); text-align: left; vertical-align: top; }
+  table.cmp-table thead th { background: var(--yellow); font: 800 18px/1.15 var(--display); }
+  table.cmp-table tbody th { font: 500 13.5px var(--mono); background: var(--paper); width: 130px; }
+  .cmp-table .mini { background: #fff; border: var(--b); border-radius: 8px; padding: 4px; margin-bottom: 8px; display: block; }
+  .cmp-table .mini svg, .cmp-table .mini img { display: block; width: 100%; max-width: 140px; margin-inline: auto; height: auto; }
+  .dots { letter-spacing: 2px; font-weight: 800; }
+  .modal h3.title { font: 800 28px var(--display); margin: 0; padding: 28px 28px 14px; padding-right: 70px; letter-spacing: -.02em; }
+  @media (max-width: 640px) {
+    .detail-top { grid-template-columns: 1fr; padding: 20px; padding-top: 60px; }
+    .d-sec { padding: 0 20px 20px; } .d-acts { padding: 0 20px 22px; } .cmp-table-wrap { padding: 0 20px 22px; }
+    .need-row { grid-template-columns: 1fr; }
+  }
+
+  .rating-card { display: grid; grid-template-columns: auto 1fr auto; gap: 18px 28px; align-items: center; background: var(--yellow); border: var(--b); border-radius: 22px; box-shadow: 8px 8px 0 var(--ink); padding: 26px 32px; }
+  .rating-num { font: 800 clamp(64px, 9vw, 96px)/.9 var(--display); letter-spacing: -.05em; }
+  .stars { position: relative; display: inline-block; font-size: 30px; letter-spacing: 3px; line-height: 1; margin-bottom: 6px; }
+  .stars-base { color: rgba(16,18,43,.22); }
+  .stars-fill { position: absolute; left: 0; top: 0; overflow: hidden; white-space: nowrap; color: var(--ink); }
+  .rating-card h3 { font: 800 clamp(22px, 3vw, 28px)/1.1 var(--display); letter-spacing: -.01em; margin: 0 0 4px; }
+  .rating-card p { margin: 0; max-width: 52ch; }
+  @media (max-width: 860px) { .rating-card { grid-template-columns: 1fr; padding: 22px; } .rating-card .btn { justify-self: start; } }
+
+  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
+  .js .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+    .js .reveal { opacity: 1; transform: none; }
+    .marquee-track { width: auto; flex-wrap: wrap; }
+    .marquee-track .dup { display: none; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#katalog">Lewati ke katalog</a>
+
+<div class="notice">
+  <div class="wrap">
+    <span>Buka <b>10.00</b> sampai paling lambat <b>21.00</b></span>
+    <span>Servis hardware, servis software, dan sparepart laptop tersedia</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#atas" aria-label="Swadaya Notebook Store, ke atas">
+      <svg class="brand-mark" viewBox="0 0 38 38" aria-hidden="true">
+        <rect x="1" y="1" width="36" height="36" rx="10" fill="#2B35F5" stroke="#10122B" stroke-width="2"/>
+        <rect x="9" y="11" width="20" height="13" rx="2.5" fill="none" stroke="#FFD93D" stroke-width="2.6"/>
+        <rect x="6" y="26" width="26" height="3.4" rx="1.7" fill="#FFD93D"/>
+      </svg>
+      <span><strong>Swadaya Notebook Store</strong></span>
+    </a>
+    <nav class="nav" aria-label="Menu utama">
+      <a href="#katalog">Katalog</a>
+      <a href="#layanan">Servis</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+      <a class="btn sm" href="#kontak">Hubungi kami</a>
+    </nav>
+  </div>
+</header>
+
+<main id="atas">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div>
+        <h1 id="heroTitle">Cari laptop yang <mark>beneran pas</mark> buat kebutuhanmu.</h1>
+        <p class="lead">Swadaya Notebook Store punya banyak pilihan laptop dari berbagai merek untuk gaming, kerja harian, dan editing. Rusak? Kami juga melayani servis dan menyediakan sparepart.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#katalog">Lihat katalog</a>
+          <a class="btn white" href="#kontak">Chat admin</a>
+        </div>
+        <div class="stats" aria-label="Ringkasan toko">
+          <span class="stat"><b id="statLaptop">0</b>pilihan laptop</span>
+          <span class="stat"><b id="statMerek">0</b>merek</span>
+          <a class="stat" href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer"><b>4,8 &#9733;</b>rating di Google Maps</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="stage" aria-hidden="true">
+          <div class="disc"></div>
+          <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="scr"><rect x="86" y="36" width="348" height="204" rx="6"/></clipPath>
+              <linearGradient id="gGame" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B1147"/><stop offset="1" stop-color="#FF5CA8"/></linearGradient>
+              <linearGradient id="gSun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB27A"/><stop offset="1" stop-color="#FF7A3D"/></linearGradient>
+            </defs>
+            <rect x="70" y="20" width="380" height="236" rx="16" fill="#10122B"/>
+            <rect x="86" y="36" width="348" height="204" rx="6" fill="#fff"/>
+            <g clip-path="url(#scr)">
+              <g class="screen" data-screen="gaming">
+                <rect x="86" y="36" width="348" height="204" fill="url(#gGame)"/>
+                <path d="M86 200 L180 150 L240 175 L330 120 L434 190 L434 240 L86 240Z" fill="#2B1A78" opacity=".85"/>
+                <circle cx="260" cy="130" r="26" fill="none" stroke="#FFD93D" stroke-width="3"/>
+                <path d="M260 92v22M260 146v22M222 130h22M276 130h22" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+                <rect x="104" y="52" width="110" height="10" rx="5" fill="#fff" opacity=".25"/>
+                <rect x="104" y="52" width="76" height="10" rx="5" fill="#3CFF9A"/>
+                <rect x="352" y="50" width="66" height="22" rx="6" fill="#10122B" opacity=".7"/>
+                <text x="385" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFD93D">144 FPS</text>
+                <path d="M110 214l40-14M110 224l60-20" stroke="#fff" stroke-width="2" opacity=".35" stroke-linecap="round"/>
+              </g>
+              <g class="screen" data-screen="harian">
+                <rect x="86" y="36" width="348" height="204" fill="#F3F5FF"/>
+                <rect x="86" y="36" width="348" height="26" fill="#DDE4F3"/>
+                <rect x="96" y="44" width="70" height="18" rx="5" fill="#fff"/>
+                <rect x="172" y="48" width="52" height="14" rx="5" fill="#C5D0EA"/>
+                <rect x="108" y="78" width="200" height="150" rx="6" fill="#fff"/>
+                <rect x="122" y="92" width="110" height="10" rx="5" fill="#2B35F5"/>
+                <rect x="122" y="116" width="170" height="6" rx="3" fill="#C9D1DF"/>
+                <rect x="122" y="130" width="160" height="6" rx="3" fill="#C9D1DF"/>
+                <rect x="122" y="144" width="172" height="6" rx="3" fill="#C9D1DF"/>
+                <rect x="122" y="158" width="120" height="6" rx="3" fill="#C9D1DF"/>
+                <rect x="122" y="180" width="170" height="36" rx="6" fill="#D3EEFF"/>
+                <rect x="322" y="78" width="98" height="64" rx="6" fill="#fff"/>
+                <rect x="334" y="90" width="48" height="8" rx="4" fill="#FFD93D"/>
+                <rect x="334" y="108" width="70" height="6" rx="3" fill="#C9D1DF"/>
+                <rect x="334" y="120" width="56" height="6" rx="3" fill="#C9D1DF"/>
+                <rect x="322" y="152" width="98" height="76" rx="6" fill="#2B35F5"/>
+                <rect x="334" y="166" width="60" height="8" rx="4" fill="#fff" opacity=".9"/>
+                <rect x="334" y="184" width="74" height="6" rx="3" fill="#fff" opacity=".5"/>
+                <rect x="334" y="196" width="48" height="6" rx="3" fill="#fff" opacity=".5"/>
+              </g>
+              <g class="screen" data-screen="editing">
+                <rect x="86" y="36" width="348" height="204" fill="#1B2230"/>
+                <rect x="104" y="48" width="200" height="104" rx="6" fill="url(#gSun)"/>
+                <circle cx="204" cy="112" r="22" fill="#FFE9A8"/>
+                <path d="M104 152 L150 112 L190 140 L240 100 L304 152Z" fill="#7A2E12" opacity=".75"/>
+                <rect x="318" y="48" width="100" height="104" rx="6" fill="#262F42"/>
+                <rect x="328" y="62" width="80" height="6" rx="3" fill="#8A97B3"/>
+                <rect x="328" y="78" width="56" height="6" rx="3" fill="#8A97B3"/>
+                <rect x="328" y="100" width="80" height="6" rx="3" fill="#FF7A3D"/>
+                <rect x="328" y="116" width="64" height="6" rx="3" fill="#8A97B3"/>
+                <rect x="104" y="164" width="314" height="62" rx="6" fill="#141A26"/>
+                <rect x="110" y="172" width="96" height="16" rx="4" fill="#FF7A3D"/>
+                <rect x="210" y="172" width="70" height="16" rx="4" fill="#FFD93D"/>
+                <rect x="284" y="172" width="126" height="16" rx="4" fill="#FF5CA8"/>
+                <rect x="110" y="194" width="140" height="14" rx="4" fill="#3DB8FF"/>
+                <rect x="254" y="194" width="100" height="14" rx="4" fill="#3CFF9A"/>
+                <rect x="226" y="166" width="3" height="58" fill="#fff"/>
+              </g>
+            </g>
+            <path d="M28 258h464l-14 6a28 28 0 0 1-12 2.5H54a28 28 0 0 1-12-2.5z" fill="#fff" stroke="#10122B" stroke-width="3"/>
+            <rect x="210" y="258" width="100" height="6" rx="3" fill="#C9D1DF"/>
+          </svg>
+          <span class="sticker s1" id="stickerNeed">RTX dan layar 144Hz</span>
+          <span class="sticker s2" id="stickerPrice">Mulai Rp 4,5 jt</span>
+        </div>
+        <div class="seg" role="group" aria-label="Lihat contoh tampilan sesuai kebutuhan">
+          <button type="button" data-need="gaming" aria-pressed="true"><span class="dot"></span>Gaming</button>
+          <button type="button" data-need="harian" aria-pressed="false"><span class="dot"></span>Harian</button>
+          <button type="button" data-need="editing" aria-pressed="false"><span class="dot"></span>Editing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder" aria-labelledby="finderTitle">
+    <div class="wrap">
+      <div class="finder-card">
+        <div>
+          <span class="tag-label">Pencari laptop</span>
+          <h2 id="finderTitle">Bingung pilih? Jawab dua pertanyaan.</h2>
+          <p class="sub">Pilih kebutuhan dan budget, kami tampilkan laptop yang paling cocok dari katalog.</p>
+          <div class="q-group">
+            <p class="q-title">Untuk apa laptopnya?</p>
+            <div class="opts" role="group" aria-label="Kebutuhan" id="fNeed">
+              <button class="opt" type="button" data-need="gaming" aria-pressed="true"><span class="dot"></span>Gaming</button>
+              <button class="opt" type="button" data-need="harian" aria-pressed="false"><span class="dot"></span>Harian</button>
+              <button class="opt" type="button" data-need="editing" aria-pressed="false"><span class="dot"></span>Editing</button>
+            </div>
+          </div>
+          <div class="q-group">
+            <p class="q-title">Budget kamu?</p>
+            <div class="opts" role="group" aria-label="Budget" id="fBudget">
+              <button class="opt" type="button" data-b="semua" aria-pressed="true">Bebas</button>
+              <button class="opt" type="button" data-b="0-6" aria-pressed="false">Di bawah 6 juta</button>
+              <button class="opt" type="button" data-b="6-10" aria-pressed="false">6 sampai 10 juta</button>
+              <button class="opt" type="button" data-b="10-15" aria-pressed="false">10 sampai 15 juta</button>
+              <button class="opt" type="button" data-b="15+" aria-pressed="false">Di atas 15 juta</button>
+            </div>
+          </div>
+        </div>
+        <div class="results" id="fResults" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Merek laptop yang tersedia"><div class="marquee-track" id="brandTrack"></div></div>
+
+  <section class="block" id="katalog" aria-labelledby="katalogTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag-label">Katalog</span>
+        <h2 id="katalogTitle">Semua laptop di Swadaya Notebook Store</h2>
+        <p>Klik laptop untuk melihat spesifikasi lengkap dan kebutuhan yang cocok. Centang "Bandingkan" untuk melihat beberapa laptop berdampingan.</p>
+      </div>
+
+      <p class="f-title">Kebutuhan</p>
+      <div class="f-row" id="needChips" role="group" aria-label="Filter kebutuhan">
+        <button class="chip" type="button" data-need="semua" aria-pressed="true">Semua</button>
+        <button class="chip" type="button" data-need="gaming" aria-pressed="false"><span class="dot"></span>Gaming</button>
+        <button class="chip" type="button" data-need="harian" aria-pressed="false"><span class="dot"></span>Harian</button>
+        <button class="chip" type="button" data-need="editing" aria-pressed="false"><span class="dot"></span>Editing</button>
+      </div>
+      <p class="f-title">Merek</p>
+      <div class="f-row" id="brandChips" role="group" aria-label="Filter merek"></div>
+
+      <div class="tools">
+        <label class="sr-only" for="q">Cari laptop</label>
+        <input type="search" id="q" placeholder="Cari nama, merek, atau prosesor" autocomplete="off">
+        <label class="sr-only" for="budget">Budget</label>
+        <select id="budget">
+          <option value="semua">Semua budget</option>
+          <option value="0-6">Di bawah Rp 6 juta</option>
+          <option value="6-10">Rp 6 sampai 10 juta</option>
+          <option value="10-15">Rp 10 sampai 15 juta</option>
+          <option value="15+">Di atas Rp 15 juta</option>
+        </select>
+        <label class="sr-only" for="sort">Urutkan</label>
+        <select id="sort">
+          <option value="default">Urutan toko</option>
+          <option value="asc">Harga termurah</option>
+          <option value="desc">Harga termahal</option>
+        </select>
+      </div>
+      <div class="count-row"><span id="count" aria-live="polite"></span></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <div class="svc-wrap">
+    <section class="block" id="layanan" aria-labelledby="layananTitle">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="tag-label">Servis dan sparepart</span>
+          <h2 id="layananTitle">Laptop rusak? Bawa ke Swadaya Notebook Store.</h2>
+          <p>Kami melayani servis hardware dan software, serta menyediakan berbagai sparepart laptop.</p>
+        </div>
+        <div class="svc-grid">
+          <div class="svc reveal">
+            <div class="svc-head">
+              <svg viewBox="0 0 30 30" aria-hidden="true"><rect x="7" y="7" width="16" height="16" rx="3" fill="#fff" stroke="#10122B" stroke-width="2.4"/><rect x="11.5" y="11.5" width="7" height="7" rx="1" fill="#10122B"/><path d="M11 3v4M19 3v4M11 23v4M19 23v4M3 11h4M3 19h4M23 11h4M23 19h4" stroke="#10122B" stroke-width="2.4" stroke-linecap="round"/></svg>
+              Servis hardware
+            </div>
+            <p>Perbaikan kerusakan fisik dan komponen laptop.</p>
+            <ul>
+              <li>Ganti layar, keyboard, dan baterai</li>
+              <li>Perbaikan engsel dan casing</li>
+              <li>Upgrade RAM dan SSD</li>
+              <li>Bersihkan kipas dan ganti thermal paste</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-head">
+              <svg viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="5" width="26" height="20" rx="4" fill="#fff" stroke="#10122B" stroke-width="2.4"/><path d="M12 11l-4 4 4 4M18 11l4 4-4 4" fill="none" stroke="#10122B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Servis software
+            </div>
+            <p>Laptop lambat, error, atau terkena virus.</p>
+            <ul>
+              <li>Instal ulang Windows</li>
+              <li>Instal driver dan aplikasi</li>
+              <li>Bersihkan virus dan malware</li>
+              <li>Backup dan pemindahan data</li>
+            </ul>
+          </div>
+          <div class="svc reveal">
+            <div class="svc-head">
+              <svg viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="9" width="23" height="13" rx="3" fill="#fff" stroke="#10122B" stroke-width="2.4"/><rect x="25" y="13" width="3" height="5" rx="1" fill="#10122B"/><rect x="6" y="13" width="9" height="5" rx="1" fill="#10122B"/></svg>
+              Sparepart laptop
+            </div>
+            <p>Komponen pengganti untuk berbagai merek dan tipe.</p>
+            <ul>
+              <li>Baterai dan charger</li>
+              <li>Layar dan keyboard</li>
+              <li>RAM, SSD, dan hard disk</li>
+              <li>Kipas dan komponen lainnya</li>
+            </ul>
+          </div>
+        </div>
+        <div class="parts reveal" aria-label="Contoh sparepart">
+          <span class="q-title">Sering dicari</span>
+          <span class="part">Baterai</span><span class="part">Charger</span><span class="part">Keyboard</span><span class="part">Layar LCD</span><span class="part">RAM</span><span class="part">SSD</span><span class="part">Hard disk</span><span class="part">Kipas</span><span class="part">Engsel</span><span class="part">Casing</span>
+        </div>
+        <div class="svc-cta reveal">
+          <span>Sebutkan merek, tipe, dan keluhanmu:</span>
+          <a class="btn white" href="https://wa.me/6281808090464?text=Halo%20Swadaya%20Notebook%20Store%2C%20saya%20mau%20tanya%20servis%20atau%20sparepart%20laptop." target="_blank" rel="noopener noreferrer">WhatsApp Admin 1</a>
+          <a class="btn white" href="https://wa.me/628987370165?text=Halo%20Swadaya%20Notebook%20Store%2C%20saya%20mau%20tanya%20servis%20atau%20sparepart%20laptop." target="_blank" rel="noopener noreferrer">WhatsApp Admin 2</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="block" aria-labelledby="whyTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tag-label">Kenapa Swadaya Notebook Store</span>
+        <h2 id="whyTitle">Beli, servis, dan cari sparepart di satu tempat.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="4" width="22" height="15" rx="3" fill="#fff" stroke="#10122B" stroke-width="2.4"/><rect x="1" y="21" width="26" height="3.4" rx="1.7" fill="#10122B"/></svg></div>
+          <h3>Banyak pilihan merek</h3>
+          <p id="whyBrand">Dari laptop hemat sampai gaming kelas atas, tersedia berbagai merek yang bisa kamu bandingkan.</p>
+        </div>
+        <div class="why reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 5h20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H11l-6 5v-5H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" fill="#fff" stroke="#10122B" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+          <h3>Konsultasi dengan admin</h3>
+          <p>Bingung memilih? Sebutkan budget dan kebutuhanmu, admin kami bantu cari yang paling cocok.</p>
+        </div>
+        <div class="why reveal">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="11" fill="#fff" stroke="#10122B" stroke-width="2.4"/><path d="M14 7v7l5 3" fill="none" stroke="#10122B" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+          <h3>Buka sampai malam</h3>
+          <p>Toko buka pukul 10.00 dan tutup paling lambat pukul 21.00, jadi lebih leluasa mampir setelah pulang kerja atau kuliah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-label="Rating pelanggan" style="padding-top:0">
+    <div class="wrap">
+      <div class="rating-card reveal">
+        <div class="rating-num">4,8</div>
+        <div>
+          <span class="stars" role="img" aria-label="Rating 4,8 dari 5 bintang">
+            <span class="stars-base" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="stars-fill" aria-hidden="true" style="width:96%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </span>
+          <h3>Dipercaya pelanggan di Google Maps</h3>
+          <p>Pelanggan menilai Swadaya Notebook Store 4,8 dari 5 bintang. Baca sendiri ulasan mereka sebelum mampir.</p>
+        </div>
+        <a class="btn white" href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">Baca ulasan di Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faqTitle" style="padding-top:0">
+    <div class="wrap faq-wrap">
+      <div class="sec-head reveal">
+        <span class="tag-label">FAQ</span>
+        <h2 id="faqTitle">Pertanyaan yang sering ditanyakan</h2>
+        <p>Belum ketemu jawabannya? Hubungi admin kami selama jam buka.</p>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Jam berapa toko buka?</summary>
+          <p>Toko buka pukul 10.00 dan tutup paling lambat pukul 21.00.</p>
+        </details>
+        <details>
+          <summary>Bisa tanya stok dan harga sebelum datang?</summary>
+          <p>Bisa. Hubungi Admin 1 atau Admin 2 lewat telepon atau WhatsApp, atau kirim email ke dedycipunjur@gmail.com. Harga dan stok dapat berubah, jadi konfirmasi dulu sebelum datang.</p>
+        </details>
+        <details>
+          <summary>Bagaimana memilih laptop sesuai kebutuhan?</summary>
+          <p>Untuk gaming, pilih laptop dengan kartu grafis khusus dan layar 120Hz atau lebih. Untuk kerja dan kuliah, prosesor Core i3 atau Ryzen 3 dengan RAM 8GB sudah cukup, dan SSD membuat laptop terasa jauh lebih cepat. Untuk editing, utamakan RAM 16GB, kartu grafis khusus, dan layar dengan warna akurat. Atau coba <a href="#finderTitle">pencari laptop</a> di atas.</p>
+        </details>
+        <details>
+          <summary>Servis apa saja yang tersedia?</summary>
+          <p>Kami melayani servis hardware dan software laptop. Lihat daftar contohnya di bagian <a href="#layanan">servis dan sparepart</a>.</p>
+        </details>
+        <details>
+          <summary>Bagaimana kalau butuh sparepart tertentu?</summary>
+          <p>Kami menyediakan berbagai sparepart laptop. Sebutkan merek, tipe laptop, dan komponen yang dicari ke admin, lalu kami cek ketersediaannya.</p>
+        </details>
+        <details>
+          <summary>Bagaimana soal garansi dan cara pembayaran?</summary>
+          <p>Tanyakan langsung ke admin sebelum membeli agar mendapat info garansi dan metode pembayaran yang terbaru.</p>
+        </details>
+        <details>
+          <summary>Di mana lokasi toko?</summary>
+          <p>Buka <a href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">lokasi toko di Google Maps</a> untuk petunjuk arah.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block contact" id="kontak" aria-labelledby="kontakTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tag-label" style="color:var(--ink)">Kontak</span>
+        <h2 id="kontakTitle">Mampir ke toko, atau chat admin dulu.</h2>
+        <p>Tanya stok, harga terbaru, servis, atau minta rekomendasi laptop sesuai budget kamu.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="infos">
+          <div class="info reveal">
+            <p class="q-title">Admin 1</p>
+            <a class="val" href="tel:+6281808090464">+62818-0809-0464</a>
+            <div class="acts">
+              <a class="btn sm" href="tel:+6281808090464">Telepon</a>
+              <a class="btn sm white" href="https://wa.me/6281808090464" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div class="info reveal">
+            <p class="q-title">Admin 2</p>
+            <a class="val" href="tel:+628987370165">+62898-7370-165</a>
+            <div class="acts">
+              <a class="btn sm" href="tel:+628987370165">Telepon</a>
+              <a class="btn sm white" href="https://wa.me/628987370165" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div class="info reveal">
+            <p class="q-title">Email</p>
+            <a class="val" href="mailto:dedycipunjur@gmail.com">dedycipunjur@gmail.com</a>
+            <div class="acts"><a class="btn sm" href="mailto:dedycipunjur@gmail.com?subject=Tanya%20laptop%20di%20Swadaya%20Notebook%20Store">Kirim email</a></div>
+          </div>
+          <div class="info reveal">
+            <p class="q-title">Lokasi dan jam buka</p>
+            <span class="val">Pukul 10.00 sampai paling lambat 21.00</span>
+            <div class="acts"><a class="btn sm" href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">Buka di Google Maps</a></div>
+          </div>
+        </div>
+
+        <div class="formcard reveal">
+          <h3>Kirim pesan</h3>
+          <p>Isi form ini, lalu aplikasi email kamu akan terbuka dengan pesan yang sudah siap dikirim.</p>
+          <form class="contact-form" id="contactForm">
+            <label>Nama
+              <input type="text" id="cName" name="nama" autocomplete="name" required>
+            </label>
+            <label>Pesan
+              <textarea id="cMsg" name="pesan" placeholder="Contoh: Saya cari laptop untuk kuliah desain, budget sekitar 10 juta." required></textarea>
+            </label>
+            <div><button class="btn" type="submit">Buka aplikasi email</button></div>
+            <p class="form-note">Tidak ada aplikasi email? Tulis langsung ke dedycipunjur@gmail.com atau chat admin lewat WhatsApp.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <a class="brand" href="#atas" aria-label="Swadaya Notebook Store, ke atas">
+      <svg class="brand-mark" viewBox="0 0 38 38" aria-hidden="true">
+        <rect x="1" y="1" width="36" height="36" rx="10" fill="#2B35F5" stroke="#fff" stroke-width="2"/>
+        <rect x="9" y="11" width="20" height="13" rx="2.5" fill="none" stroke="#FFD93D" stroke-width="2.6"/>
+        <rect x="6" y="26" width="26" height="3.4" rx="1.7" fill="#FFD93D"/>
+      </svg>
+      <span><strong>Swadaya Notebook Store</strong></span>
+    </a>
+    <nav aria-label="Menu footer">
+      <a href="#katalog">Katalog</a>
+      <a href="#layanan">Servis dan sparepart</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+      <a href="https://maps.app.goo.gl/JW3Zf19A5umssGeo7" target="_blank" rel="noopener noreferrer">Google Maps</a>
+    </nav>
+    <p class="copy">&copy; 2026 Swadaya Notebook Store. Harga dan stok dapat berubah, hubungi admin untuk info terbaru.</p>
+  </div>
+</footer>
+
+<div class="cmp-bar" id="cmpBar" role="region" aria-label="Perbandingan laptop">
+  <span id="cmpText"></span>
+  <button class="btn sm" type="button" id="cmpOpen">Lihat perbandingan</button>
+  <button class="btn sm white" type="button" id="cmpClear">Kosongkan</button>
+  <span class="note" id="cmpNote" aria-live="polite"></span>
+</div>
+
+<div class="wa-fab">
+  <div class="wa-menu" id="fabMenu" role="group" aria-label="Pilih admin untuk chat WhatsApp">
+    <a href="https://wa.me/6281808090464" target="_blank" rel="noopener noreferrer">Admin 1<small>+62818-0809-0464</small></a>
+    <a href="https://wa.me/628987370165" target="_blank" rel="noopener noreferrer">Admin 2<small>+62898-7370-165</small></a>
+  </div>
+  <button class="wa-fab-btn" id="fabBtn" type="button" aria-expanded="false" aria-controls="fabMenu">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="#fff"/></svg>
+    Chat admin
+  </button>
+</div>
+
+<dialog class="modal detail" id="detail" aria-labelledby="dName">
+  <button class="close-btn" id="closeDetail" type="button" aria-label="Tutup detail">&times;</button>
+  <div id="detailContent"></div>
+</dialog>
+
+<dialog class="modal wide" id="compare" aria-labelledby="cmpTitle">
+  <button class="close-btn" id="closeCmp" type="button" aria-label="Tutup perbandingan">&times;</button>
+  <h3 class="title" id="cmpTitle">Perbandingan laptop</h3>
+  <div id="compareContent"></div>
+</dialog>
+
+<script>
+/* ============================================================
+   KATALOG LAPTOP
+   Semua data di bawah ini adalah CONTOH. Spesifikasi dan harga
+   perlu kamu cek dan sesuaikan dengan stok asli di toko,
+   terutama untuk merek lokal (Axioo, Advan).
+
+   Cara membaca satu baris:
+   P(id, merek, nama, harga, [kebutuhan], [gaming, harian, editing],
+     ringkasan, prosesor, grafis, RAM, penyimpanan, layar, sistem operasi)
+
+   - harga   : angka rupiah, atau null untuk menampilkan "Tanya harga"
+   - nilai   : kecocokan 1 sampai 5 untuk gaming, harian, editing
+   - foto    : simpan di folder "foto" dengan nama sesuai id,
+               contoh foto/tuf-f15.jpg. Kalau belum ada, otomatis
+               memakai ilustrasi.
+   - opsional: tambahkan kondisi dan garansi dengan cara
+               X("tuf-f15", { kondisi: "Baru", garansi: "1 tahun" })
+               di bagian bawah daftar.
+   ============================================================ */
+const P = (id, brand, name, price, tags, n, summary, cpu, gpu, ram, ssd, layar, os = "Windows 11 Home") => ({
+  id, brand, name, price, tags,
+  needs: { gaming: n[0], harian: n[1], editing: n[2] },
+  summary,
+  specs: { cpu, gpu, ram, ssd, layar, os }
+});
+
+const PRODUCTS = [
+  /* ASUS */
+  P("tuf-f15", "ASUS", "TUF Gaming F15", 11499000, ["gaming", "editing"], [4, 3, 3],
+    "Laptop gaming tangguh dengan layar 144Hz. Cukup kuat juga untuk edit foto dan video ringan.",
+    "Intel Core i5-11400H", "NVIDIA GeForce RTX 3050 4GB", "16GB DDR4", "512GB NVMe", "15,6 inci Full HD, 144Hz"),
+  P("rog-strix-g16", "ASUS", "ROG Strix G16", 25999000, ["gaming", "editing"], [5, 3, 4],
+    "Gaming kelas atas dengan layar 165Hz dan pendingin besar. Siap untuk game berat dan render video.",
+    "Intel Core i7-13650HX", "NVIDIA GeForce RTX 4060 8GB", "16GB DDR5", "512GB NVMe", "16 inci FHD+, 165Hz"),
+  P("vivobook-14", "ASUS", "Vivobook 14", 6599000, ["harian"], [2, 5, 2],
+    "Tipis, ringan, dan mudah dibawa. Pas untuk mahasiswa dan pekerja yang sering berpindah tempat.",
+    "AMD Ryzen 5 5500U", "AMD Radeon Graphics", "8GB DDR4", "512GB NVMe", "14 inci Full HD"),
+  P("vivobook-pro-15-oled", "ASUS", "Vivobook Pro 15 OLED", 14499000, ["editing", "gaming"], [3, 4, 5],
+    "Layar OLED dengan warna sangat akurat, pilihan tepat untuk editor foto, video, dan desainer.",
+    "Intel Core i7-12650H", "NVIDIA GeForce RTX 3050 4GB", "16GB DDR4", "512GB NVMe", "15,6 inci OLED 2.8K"),
+  P("zenbook-14-oled", "ASUS", "Zenbook 14 OLED", 16999000, ["harian", "editing"], [1, 5, 4],
+    "Tipis dan ringan dengan layar OLED 120Hz. Cocok untuk profesional yang sering bepergian.",
+    "Intel Core Ultra 5 125H", "Intel Arc Graphics", "16GB LPDDR5X", "512GB NVMe", "14 inci OLED 2.8K, 120Hz"),
+
+  /* Acer */
+  P("nitro-5", "Acer", "Nitro 5 AN515", 15299000, ["gaming", "editing"], [5, 3, 4],
+    "Performa tinggi untuk game berat dan render video. Pendinginnya besar, jadi stabil saat dipakai lama.",
+    "AMD Ryzen 7 5800H", "NVIDIA GeForce RTX 3060 6GB", "16GB DDR4", "512GB NVMe", "15,6 inci Full HD, 144Hz"),
+  P("aspire-5", "Acer", "Aspire 5", 7499000, ["harian"], [2, 5, 2],
+    "Pilihan serbaguna untuk kuliah dan kerja. Layar lega dan tenaga cukup untuk banyak tab sekaligus.",
+    "Intel Core i5-1235U", "Intel Iris Xe", "8GB DDR4", "512GB NVMe", "15,6 inci Full HD"),
+  P("swift-go-14", "Acer", "Swift Go 14", 13499000, ["harian", "editing"], [1, 5, 4],
+    "Ringan dengan layar OLED 2.8K. Enak untuk kerja mobile dan edit foto atau video ringan.",
+    "Intel Core Ultra 5 125H", "Intel Arc Graphics", "16GB LPDDR5X", "512GB NVMe", "14 inci OLED 2.8K"),
+  P("predator-helios-neo-16", "Acer", "Predator Helios Neo 16", 24999000, ["gaming", "editing"], [5, 3, 4],
+    "Gaming serius dengan layar 16 inci 165Hz. Kuat untuk game terbaru dan pekerjaan kreatif.",
+    "Intel Core i7-13700HX", "NVIDIA GeForce RTX 4060 8GB", "16GB DDR5", "512GB NVMe", "16 inci WUXGA, 165Hz"),
+
+  /* Lenovo */
+  P("loq-15", "Lenovo", "LOQ 15", 12799000, ["gaming"], [4, 3, 3],
+    "Gaming seimbang dengan harga bersahabat. Cocok untuk Valorant, Dota 2, dan game populer lainnya.",
+    "Intel Core i5-12450H", "NVIDIA GeForce RTX 3050 6GB", "16GB DDR5", "512GB NVMe", "15,6 inci Full HD, 144Hz"),
+  P("legion-slim-5-16", "Lenovo", "Legion Slim 5 16", 23999000, ["gaming", "editing"], [5, 3, 4],
+    "Gaming dan kreasi dalam bodi yang relatif tipis. Layar 2.5K 165Hz untuk visual tajam dan halus.",
+    "AMD Ryzen 7 7840HS", "NVIDIA GeForce RTX 4060 8GB", "16GB DDR5", "512GB NVMe", "16 inci WQXGA, 165Hz"),
+  P("ideapad-slim-3", "Lenovo", "IdeaPad Slim 3", 5599000, ["harian"], [1, 4, 2],
+    "Laptop hemat untuk tugas sekolah, browsing, dan Office. Cocok untuk kebutuhan dasar.",
+    "Intel Core i3-1215U", "Intel UHD Graphics", "8GB DDR4", "256GB NVMe", "15,6 inci Full HD"),
+  P("thinkpad-e14", "Lenovo", "ThinkPad E14", 10599000, ["harian"], [1, 5, 3],
+    "Laptop kerja yang kokoh dengan keyboard nyaman. Cocok untuk kantor dan pekerjaan dokumen seharian.",
+    "Intel Core i5-1235U", "Intel Iris Xe", "16GB DDR4", "512GB NVMe", "14 inci Full HD"),
+
+  /* HP */
+  P("hp-14s", "HP", "14s", 5099000, ["harian"], [1, 4, 1],
+    "Pilihan hemat di katalog ini. Pas untuk pelajar yang butuh laptop ringan untuk belajar online.",
+    "AMD Ryzen 3 5300U", "AMD Radeon Graphics", "8GB DDR4", "256GB NVMe", "14 inci HD"),
+  P("victus-15", "HP", "Victus 15", 11299000, ["gaming"], [4, 3, 3],
+    "Gaming terjangkau dengan layar 144Hz. Cukup untuk game populer dan multitasking.",
+    "AMD Ryzen 5 5600H", "NVIDIA GeForce RTX 3050 4GB", "16GB DDR4", "512GB NVMe", "15,6 inci Full HD, 144Hz"),
+  P("pavilion-14", "HP", "Pavilion 14", 9999000, ["harian"], [2, 5, 3],
+    "Desain rapi dengan performa nyaman untuk kuliah, kerja, dan hiburan.",
+    "Intel Core i5-1335U", "Intel Iris Xe", "16GB DDR4", "512GB NVMe", "14 inci Full HD"),
+
+  /* Dell */
+  P("inspiron-15-3520", "Dell", "Inspiron 15 3520", 7999000, ["harian"], [2, 4, 2],
+    "Layar lega 120Hz untuk kerja dan hiburan. Pilihan aman untuk keluarga dan pelajar.",
+    "Intel Core i5-1235U", "Intel Iris Xe", "8GB DDR4", "512GB NVMe", "15,6 inci Full HD, 120Hz"),
+  P("dell-g15-5530", "Dell", "G15 5530", 18999000, ["gaming", "editing"], [5, 3, 4],
+    "Gaming bertenaga dengan RTX 4050. Tangguh untuk game modern dan tugas kreatif ringan.",
+    "Intel Core i7-13650HX", "NVIDIA GeForce RTX 4050 6GB", "16GB DDR5", "512GB NVMe", "15,6 inci Full HD, 120Hz"),
+  P("latitude-3440", "Dell", "Latitude 14 3440", 12999000, ["harian"], [1, 5, 3],
+    "Laptop bisnis dengan OS Pro dan RAM 16GB. Andal untuk kerja kantoran dan multitasking.",
+    "Intel Core i5-1335U", "Intel Iris Xe", "16GB DDR4", "512GB NVMe", "14 inci Full HD", "Windows 11 Pro"),
+
+  /* MSI */
+  P("msi-thin-gf63", "MSI", "Thin GF63", 10499000, ["gaming"], [4, 3, 3],
+    "Gaming entry-level yang ringkas dengan layar 144Hz. Pas untuk gamer dengan budget terbatas.",
+    "Intel Core i5-12450H", "NVIDIA GeForce RTX 3050 4GB", "8GB DDR4", "512GB NVMe", "15,6 inci Full HD, 144Hz"),
+  P("msi-katana-15", "MSI", "Katana 15", 20999000, ["gaming", "editing"], [5, 3, 4],
+    "Gaming kencang dengan RTX 4060 dan SSD 1TB. Lega untuk game dan file proyek.",
+    "Intel Core i7-13620H", "NVIDIA GeForce RTX 4060 8GB", "16GB DDR5", "1TB NVMe", "15,6 inci Full HD, 144Hz"),
+  P("msi-modern-14", "MSI", "Modern 14", 8499000, ["harian"], [2, 5, 2],
+    "Ringan dan rapi untuk profesional muda. Nyaman untuk kerja dan presentasi.",
+    "Intel Core i5-1335U", "Intel Iris Xe", "16GB DDR4", "512GB NVMe", "14 inci Full HD"),
+
+  /* Apple */
+  P("macbook-air-m1", "Apple", "MacBook Air M1", 11199000, ["harian", "editing"], [1, 5, 4],
+    "Ringan, awet baterai, dan sangat responsif. Enak untuk kerja, kuliah, dan edit video ringan.",
+    "Apple M1 (8-core CPU)", "Apple GPU 7-core", "8GB unified memory", "256GB SSD", "13,3 inci Retina", "macOS"),
+  P("macbook-air-m4", "Apple", "MacBook Air 13 M4", 17999000, ["harian", "editing"], [2, 5, 4],
+    "Lebih kencang dengan RAM 16GB. Mulus untuk kerja, kuliah, dan edit video.",
+    "Apple M4 (10-core CPU)", "Apple GPU 8-core", "16GB unified memory", "256GB SSD", "13,6 inci Liquid Retina", "macOS"),
+  P("macbook-pro-14-m4", "Apple", "MacBook Pro 14 M4", 28999000, ["editing", "harian"], [3, 5, 5],
+    "Layar XDR dan performa tinggi untuk editor video, fotografer, dan kreator.",
+    "Apple M4 (10-core CPU)", "Apple GPU 10-core", "16GB unified memory", "512GB SSD", "14,2 inci Liquid Retina XDR", "macOS"),
+
+  /* Merek lainnya */
+  P("axioo-hype-5", "Axioo", "Hype 5", 6999000, ["harian"], [2, 4, 2],
+    "Laptop lokal dengan harga terjangkau. Cocok untuk kuliah dan pekerjaan sehari-hari.",
+    "AMD Ryzen 5 5500U", "AMD Radeon Graphics", "8GB DDR4", "512GB NVMe", "14 inci Full HD"),
+  P("advan-workplus", "Advan", "WorkPlus", 4499000, ["harian"], [1, 3, 1],
+    "Laptop lokal hemat untuk tugas dasar sekolah dan kantor.",
+    "Intel Core i3-1215U", "Intel UHD Graphics", "8GB DDR4", "256GB NVMe", "14 inci Full HD"),
+  P("infinix-inbook-x3-slim", "Infinix", "INBOOK X3 Slim", 6499000, ["harian"], [1, 4, 2],
+    "Tipis dan ringan dengan RAM 16GB. Lincah untuk kuliah dan kerja dengan banyak tab.",
+    "Intel Core i5-1235U", "Intel Iris Xe", "16GB LPDDR4X", "512GB NVMe", "14 inci Full HD"),
+  P("huawei-matebook-d14", "Huawei", "MateBook D 14", 9499000, ["harian"], [2, 5, 3],
+    "Bodi logam yang kokoh dan tampilan elegan. Nyaman untuk kerja dan kuliah.",
+    "Intel Core i5-13420H", "Intel UHD Graphics", "16GB DDR4", "512GB NVMe", "14 inci Full HD"),
+  P("samsung-galaxy-book4", "Samsung", "Galaxy Book4", 11999000, ["harian"], [1, 5, 3],
+    "Layar AMOLED yang cerah dan tajam. Enak untuk kerja dan menonton.",
+    "Intel Core i5-1335U", "Intel Iris Xe", "16GB LPDDR4X", "512GB NVMe", "15,6 inci Full HD AMOLED"),
+  P("gigabyte-g5-kf", "Gigabyte", "G5 KF", 16999000, ["gaming", "editing"], [5, 3, 4],
+    "Gaming bertenaga dengan RTX 4060 dan layar 144Hz. Seimbang untuk game dan kerja.",
+    "Intel Core i7-13620H", "NVIDIA GeForce RTX 4060 8GB", "16GB DDR5", "512GB NVMe", "15,6 inci Full HD, 144Hz")
+];
+
+/* Info tambahan per laptop (opsional). Contoh: */
+const X = (id, extra) => Object.assign(PRODUCTS.find(p => p.id === id) || {}, extra);
+// X("tuf-f15", { kondisi: "Baru", garansi: "1 tahun" });
+
+const ADMINS = [
+  { nama: "Admin 1", tampil: "+62818-0809-0464", nomor: "6281808090464" },
+  { nama: "Admin 2", tampil: "+62898-7370-165",  nomor: "628987370165" }
+];
+const EMAIL = "dedycipunjur@gmail.com";
+
+/* ---------- Data bantu ---------- */
+const NEED_META = {
+  gaming:  { label: "Gaming",  desc: [
+    "Kurang cocok untuk game berat. Masih bisa untuk game ringan.",
+    "Cukup untuk game ringan sampai sedang dengan pengaturan grafis rendah.",
+    "Bisa untuk game populer dengan pengaturan menengah.",
+    "Lancar untuk kebanyakan game populer dengan grafis tinggi.",
+    "Sangat kuat, game berat bisa dimainkan dengan grafis tinggi."
+  ]},
+  harian:  { label: "Harian",  desc: [
+    "Hanya untuk tugas sangat dasar.",
+    "Cukup untuk browsing dan dokumen sederhana.",
+    "Nyaman untuk sekolah, kuliah, dan Office.",
+    "Lancar untuk banyak tab dan aplikasi sekaligus.",
+    "Sangat nyaman untuk kerja dan kuliah seharian."
+  ]},
+  editing: { label: "Editing", desc: [
+    "Belum cocok untuk edit video atau desain.",
+    "Hanya cukup untuk edit foto sederhana.",
+    "Bisa untuk edit foto dan video ringan.",
+    "Lancar untuk edit video Full HD dan desain grafis.",
+    "Sangat mumpuni untuk edit video, foto, dan desain profesional."
+  ]}
+};
+const VERDICT = ["Kurang cocok", "Kurang cocok", "Cukup cocok", "Cocok", "Sangat cocok"];
+const SPEC_LABELS = [["cpu", "Prosesor"], ["gpu", "Kartu grafis"], ["ram", "RAM"], ["ssd", "Penyimpanan"], ["layar", "Layar"], ["os", "Sistem operasi"]];
+const SCREEN_COLORS = { gaming: ["#1B1147", "#FF5CA8"], harian: ["#0F3D8A", "#3DB8FF"], editing: ["#3B1A0E", "#FF7A3D"] };
+const BUDGETS = { "semua": [0, Infinity], "0-6": [0, 6e6], "6-10": [6e6, 10e6], "10-15": [10e6, 15e6], "15+": [15e6, Infinity] };
+
+const rupiah = n => n == null ? "Tanya harga" : "Rp " + new Intl.NumberFormat("id-ID").format(n);
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const byId = id => PRODUCTS.find(p => p.id === id);
+const $ = id => document.getElementById(id);
+const waLink = (nomor, text) => `https://wa.me/${nomor}?text=${encodeURIComponent(text)}`;
+
+/* Daftar merek urut dari yang paling banyak modelnya */
+const BRANDS = (() => {
+  const c = {};
+  PRODUCTS.forEach(p => { c[p.brand] = (c[p.brand] || 0) + 1; });
+  return Object.keys(c).sort((a, b) => c[b] - c[a] || a.localeCompare(b)).map(name => ({ name, count: c[name] }));
+})();
+
+/* ---------- Ilustrasi dan foto ---------- */
+let gradSeq = 0;
+function laptopSVG(p) {
+  const [a, b] = SCREEN_COLORS[p.tags[0]];
+  const gid = "lg" + (gradSeq++);
+  const fs = Math.max(14, Math.min(30, Math.round(150 / Math.max(p.brand.length, 4) * 1.35)));
+  return `<svg viewBox="0 0 200 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi ${p.brand} ${p.name}">
+    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs>
+    <rect x="30" y="8" width="140" height="92" rx="7" fill="#10122B"/>
+    <rect x="36" y="14" width="128" height="80" rx="3" fill="url(#${gid})"/>
+    <circle cx="150" cy="28" r="9" fill="#fff" opacity=".18"/>
+    <rect x="46" y="76" width="60" height="4" rx="2" fill="#fff" opacity=".35"/>
+    <rect x="46" y="84" width="38" height="4" rx="2" fill="#fff" opacity=".25"/>
+    <text x="100" y="58" text-anchor="middle" font-family="Bricolage Grotesque, Arial Black, Arial, sans-serif" font-weight="800" font-size="${fs}" fill="#fff">${p.brand}</text>
+    <path d="M12 102h176l-6 4a10 10 0 0 1-5 1.4H23a10 10 0 0 1-5-1.4z" fill="#fff" stroke="#10122B" stroke-width="2"/>
+    <rect x="84" y="102" width="32" height="3" rx="1.5" fill="#C9D1DF"/>
+  </svg>`;
+}
+function artHTML(p) {
+  const src = p.photo || `foto/${p.id}.jpg`;
+  return `<img class="photo" src="${src}" alt="${p.brand} ${p.name}" loading="lazy" data-id="${p.id}" style="mix-blend-mode:multiply;aspect-ratio:4/3;object-fit:contain">`;
+}
+document.addEventListener("error", e => {
+  const img = e.target;
+  if (img && img.tagName === "IMG" && img.classList.contains("photo")) {
+    const p = byId(img.dataset.id);
+    if (p) img.outerHTML = laptopSVG(p);
+  }
+}, true);
+
+const tagsHTML = p => p.tags.map(t => `<span class="tag ${t}">${cap(t)}</span>`).join("");
+function specLine(p) {
+  const parts = [p.specs.cpu];
+  if (/RTX|GTX|Radeon RX/.test(p.specs.gpu)) parts.push(p.specs.gpu.replace("NVIDIA GeForce ", ""));
+  parts.push(p.specs.ram.split(" ")[0] + " RAM");
+  parts.push(p.specs.ssd.split(" ")[0]);
+  return parts.join(", ");
+}
+
+/* ---------- Hero ---------- */
+$("statLaptop").textContent = PRODUCTS.length;
+$("statMerek").textContent = BRANDS.length;
+const minPrice = Math.min(...PRODUCTS.filter(p => p.price != null).map(p => p.price));
+$("stickerPrice").textContent = "Mulai Rp " + (Math.round(minPrice / 1e5) / 10).toString().replace(".", ",") + " jt";
+$("whyBrand").textContent = `Dari laptop hemat sampai gaming kelas atas, tersedia ${BRANDS.length} merek yang bisa kamu bandingkan.`;
+
+const STICKERS = { gaming: "RTX dan layar 144Hz", harian: "Ringan dan awet", editing: "Warna akurat" };
+const screens = document.querySelectorAll(".stage .screen");
+function showScene(need) {
+  screens.forEach(s => s.classList.toggle("on", s.dataset.screen === need));
+  $("stickerNeed").textContent = STICKERS[need];
+  document.querySelectorAll(".seg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.need === need)));
+}
+document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
+  showScene(b.dataset.need);
+  fState.need = b.dataset.need;
+  syncFinderButtons();
+  renderFinder();
+}));
+
+/* Marquee merek */
+(() => {
+  const html = BRANDS.map(b => `<span>${b.name}</span>`).join("");
+  $("brandTrack").innerHTML = html + `<div class="dup" style="display:contents" aria-hidden="true">${html}</div>`;
+})();
+
+/* ---------- Pencari laptop ---------- */
+const fState = { need: "gaming", budget: "semua" };
+function syncFinderButtons() {
+  document.querySelectorAll("#fNeed .opt").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.need === fState.need)));
+  document.querySelectorAll("#fBudget .opt").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.b === fState.budget)));
+}
+function renderFinder() {
+  const [lo, hi] = BUDGETS[fState.budget];
+  const n = fState.need;
+  const list = PRODUCTS
+    .filter(p => p.needs[n] >= 3 && (fState.budget === "semua" || (p.price != null && p.price >= lo && p.price < hi)))
+    .sort((a, b) => b.needs[n] - a.needs[n] || (a.price ?? 1e12) - (b.price ?? 1e12));
+  const box = $("fResults");
+  if (!list.length) {
+    box.innerHTML = `<div class="res-empty"><strong>Belum ada pilihan ${NEED_META[n].label.toLowerCase()} di budget ini.</strong><br>Coba naikkan budget, atau tanya admin untuk cek stok terbaru.</div>`;
+    return;
+  }
+  const top = list.slice(0, 3);
+  box.innerHTML = top.map(p => `
+    <button class="res ${n}" type="button" data-open="${p.id}" aria-label="Lihat detail ${p.brand} ${p.name}">
+      <span class="res-art">${laptopSVG(p)}</span>
+      <span>
+        <span class="res-name">${p.brand} ${p.name}</span>
+        <span class="res-spec">${specLine(p)}</span>
+        <span class="res-meta"><b>${rupiah(p.price)}</b><span>${NEED_META[n].label}: ${VERDICT[p.needs[n] - 1]}</span></span>
+      </span>
+    </button>`).join("") +
+    `<div class="res-more"><button class="btn sm white" type="button" id="fMore">Lihat ${list.length} laptop yang cocok di katalog</button></div>`;
+}
+$("fNeed").addEventListener("click", e => {
+  const b = e.target.closest(".opt"); if (!b) return;
+  fState.need = b.dataset.need; syncFinderButtons(); renderFinder(); showScene(fState.need);
+});
+$("fBudget").addEventListener("click", e => {
+  const b = e.target.closest(".opt"); if (!b) return;
+  fState.budget = b.dataset.b; syncFinderButtons(); renderFinder();
+});
+$("fResults").addEventListener("click", e => {
+  const more = e.target.closest("#fMore");
+  if (more) {
+    catState.need = fState.need; catState.brand = "semua"; qEl.value = ""; sortEl.value = "default";
+    budgetEl.value = fState.budget; syncCatButtons(); renderGrid();
+    $("katalog").scrollIntoView({ behavior: "smooth" });
+    return;
+  }
+  const r = e.target.closest("[data-open]");
+  if (r) openDetail(r.dataset.open, r);
+});
+
+/* ---------- Katalog ---------- */
+const grid = $("grid");
+const qEl = $("q"), budgetEl = $("budget"), sortEl = $("sort"), countEl = $("count");
+const catState = { need: "semua", brand: "semua" };
+
+$("brandChips").innerHTML =
+  `<button class="chip" type="button" data-brand="semua" aria-pressed="true">Semua merek</button>` +
+  BRANDS.map(b => `<button class="chip" type="button" data-brand="${b.name}" aria-pressed="false">${b.name} <span style="color:var(--muted);font-weight:400">${b.count}</span></button>`).join("");
+
+function syncCatButtons() {
+  document.querySelectorAll("#needChips .chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.need === catState.need)));
+  document.querySelectorAll("#brandChips .chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.brand === catState.brand)));
+}
+function getList() {
+  const q = qEl.value.trim().toLowerCase();
+  const [lo, hi] = BUDGETS[budgetEl.value];
+  let list = PRODUCTS.filter(p => {
+    if (catState.need !== "semua" && !p.tags.includes(catState.need)) return false;
+    if (catState.brand !== "semua" && p.brand !== catState.brand) return false;
+    if (q && !(p.brand + " " + p.name + " " + Object.values(p.specs).join(" ")).toLowerCase().includes(q)) return false;
+    if (budgetEl.value !== "semua" && (p.price == null || p.price < lo || p.price >= hi)) return false;
+    return true;
+  });
+  const dir = sortEl.value;
+  if (dir !== "default") {
+    list = [...list].sort((a, b) => {
+      if (a.price == null) return 1;
+      if (b.price == null) return -1;
+      return dir === "asc" ? a.price - b.price : b.price - a.price;
+    });
+  }
+  return list;
+}
+function renderGrid() {
+  const list = getList();
+  countEl.textContent = list.length ? `Menampilkan ${list.length} dari ${PRODUCTS.length} laptop` : "";
+  if (!list.length) {
+    grid.innerHTML = `<div class="empty">Tidak ada laptop yang cocok dengan pilihan ini. Coba ubah filter, atau hubungi admin untuk cek stok terbaru.<br><button class="chip" type="button" id="resetBtn">Hapus semua filter</button></div>`;
+    return;
+  }
+  grid.innerHTML = list.map(p => `
+    <article class="card ${p.tags[0]}">
+      <button class="card-main" type="button" data-open="${p.id}" aria-label="Lihat detail ${p.brand} ${p.name}">
+        <span class="card-art">${artHTML(p)}</span>
+        <span class="card-body">
+          <span class="card-brand">${p.brand}${p.kondisi ? `<span class="cond">${p.kondisi}</span>` : ""}</span>
+          <span class="card-name">${p.name}</span>
+          <span class="card-spec">${specLine(p)}</span>
+          <span class="card-foot">
+            <span class="price">${rupiah(p.price)}</span>
+            <span class="tags">${tagsHTML(p)}</span>
+          </span>
+        </span>
+      </button>
+      <label class="cmp"><input type="checkbox" data-cmp="${p.id}" ${cmp.has(p.id) ? "checked" : ""}> Bandingkan</label>
+    </article>`).join("");
+}
+function resetFilters() {
+  catState.need = "semua"; catState.brand = "semua";
+  qEl.value = ""; budgetEl.value = "semua"; sortEl.value = "default";
+  syncCatButtons(); renderGrid();
+}
+$("needChips").addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; catState.need = c.dataset.need; syncCatButtons(); renderGrid(); });
+$("brandChips").addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; catState.brand = c.dataset.brand; syncCatButtons(); renderGrid(); });
+qEl.addEventListener("input", renderGrid);
+budgetEl.addEventListener("change", renderGrid);
+sortEl.addEventListener("change", renderGrid);
+
+grid.addEventListener("click", e => {
+  if (e.target.closest("#resetBtn")) { resetFilters(); return; }
+  const card = e.target.closest("[data-open]");
+  if (card) openDetail(card.dataset.open, card);
+});
+
+/* ---------- Perbandingan ---------- */
+const cmp = new Set();
+const cmpBar = $("cmpBar");
+let noteTimer;
+function cmpNote(msg) {
+  $("cmpNote").textContent = msg;
+  clearTimeout(noteTimer);
+  noteTimer = setTimeout(() => { $("cmpNote").textContent = ""; }, 2600);
+}
+function updateCmpBar() {
+  const n = cmp.size;
+  cmpBar.classList.toggle("show", n > 0);
+  $("cmpText").textContent = `Bandingkan: ${n} dari 3 laptop`;
+  $("cmpOpen").disabled = n < 2;
+}
+function toggleCmp(id) {
+  if (cmp.has(id)) cmp.delete(id);
+  else if (cmp.size >= 3) { cmpNote("Maksimal 3 laptop"); return false; }
+  else cmp.add(id);
+  const cb = grid.querySelector(`input[data-cmp="${id}"]`);
+  if (cb) cb.checked = cmp.has(id);
+  updateCmpBar();
+  return true;
+}
+grid.addEventListener("change", e => {
+  const cb = e.target.closest("input[data-cmp]"); if (!cb) return;
+  const id = cb.dataset.cmp;
+  if (cb.checked) { if (!toggleCmp(id)) cb.checked = false; }
+  else toggleCmp(id);
+});
+$("cmpClear").addEventListener("click", () => {
+  cmp.clear();
+  grid.querySelectorAll("input[data-cmp]").forEach(c => { c.checked = false; });
+  updateCmpBar();
+});
+const dots = s => "●".repeat(s) + "○".repeat(5 - s);
+$("cmpOpen").addEventListener("click", () => {
+  const list = [...cmp].map(byId);
+  const row = (label, fn) => `<tr><th scope="row">${label}</th>${list.map(p => `<td>${fn(p)}</td>`).join("")}</tr>`;
+  $("compareContent").innerHTML = `<div class="cmp-table-wrap"><table class="cmp-table">
+    <thead><tr><th scope="col"></th>${list.map(p => `<th scope="col"><span class="mini">${laptopSVG(p)}</span>${p.brand} ${p.name}</th>`).join("")}</tr></thead>
+    <tbody>
+      ${row("Harga", p => `<strong>${rupiah(p.price)}</strong>`)}
+      ${SPEC_LABELS.map(([k, l]) => row(l, p => p.specs[k])).join("")}
+      ${["gaming", "harian", "editing"].map(n => row(NEED_META[n].label, p => `<span class="dots">${dots(p.needs[n])}</span><br>${VERDICT[p.needs[n] - 1]}`)).join("")}
+    </tbody></table></div>`;
+  $("compare").showModal();
+  $("compare").scrollTop = 0;
+});
+$("closeCmp").addEventListener("click", () => $("compare").close());
+$("compare").addEventListener("click", e => { if (e.target === $("compare")) $("compare").close(); });
+
+/* ---------- Detail laptop ---------- */
+const dlg = $("detail");
+let lastTrigger = null;
+function openDetail(id, trigger) {
+  const p = byId(id); if (!p) return;
+  lastTrigger = trigger || null;
+  const msg = `Halo Swadaya Notebook Store, saya tertarik dengan ${p.brand} ${p.name}. Apakah stoknya masih tersedia?`;
+  const specs = Object.entries({ ...p.specs, ...(p.kondisi ? { kondisi: p.kondisi } : {}), ...(p.garansi ? { garansi: p.garansi } : {}) });
+  const labelOf = k => (SPEC_LABELS.find(x => x[0] === k) || [k, cap(k)])[1];
+  const specRows = specs.map(([k, v]) => `<tr><th scope="row">${labelOf(k)}</th><td>${v}</td></tr>`).join("");
+  const needRows = ["gaming", "harian", "editing"].map(n => {
+    const s = p.needs[n];
+    const meter = [1, 2, 3, 4, 5].map(i => `<b class="${i <= s ? "fill" : ""}"></b>`).join("");
+    return `<div class="need-row ${n}">
+      <div class="label"><span class="dot"></span>${NEED_META[n].label}</div>
+      <div>
+        <div class="meter" role="img" aria-label="${NEED_META[n].label}: ${s} dari 5">${meter}</div>
+        <div class="verdict">${VERDICT[s - 1]}</div>
+        <div class="desc">${NEED_META[n].desc[s - 1]}</div>
+      </div>
+    </div>`;
+  }).join("");
+
+  $("detailContent").innerHTML = `
+    <div class="detail">
+      <div class="detail-top">
+        <div class="detail-art ${p.tags[0]}">${artHTML(p)}</div>
+        <div>
+          <p class="brand-line">${p.brand}</p>
+          <h3 id="dName">${p.name}</h3>
+          <div class="tags ${p.tags[0]}">${tagsHTML(p)}</div>
+          <p class="price-big">${rupiah(p.price)}</p>
+          <p class="summary">${p.summary}</p>
+        </div>
+      </div>
+      <div class="d-sec"><h4>Cocok untuk kebutuhan apa?</h4><div class="needs">${needRows}</div></div>
+      <div class="d-sec"><h4>Spesifikasi</h4><table class="specs"><tbody>${specRows}</tbody></table></div>
+      <div class="d-acts">
+        <a class="btn" href="${waLink(ADMINS[0].nomor, msg)}" target="_blank" rel="noopener noreferrer">Tanya ${ADMINS[0].nama}</a>
+        <a class="btn" href="${waLink(ADMINS[1].nomor, msg)}" target="_blank" rel="noopener noreferrer">Tanya ${ADMINS[1].nama}</a>
+        <a class="btn white" href="mailto:${EMAIL}?subject=${encodeURIComponent("Tanya " + p.brand + " " + p.name)}&body=${encodeURIComponent(msg)}">Kirim email</a>
+        <button class="btn white" type="button" id="dCmp">${cmp.has(p.id) ? "Hapus dari perbandingan" : "Tambah ke perbandingan"}</button>
+      </div>
+    </div>`;
+  $("dCmp").addEventListener("click", () => {
+    const ok = toggleCmp(p.id);
+    $("dCmp").textContent = cmp.has(p.id) ? "Hapus dari perbandingan" : "Tambah ke perbandingan";
+    if (!ok) $("dCmp").textContent = "Maksimal 3 laptop";
+  });
+  dlg.showModal();
+  dlg.scrollTop = 0;
+}
+$("closeDetail").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+dlg.addEventListener("close", () => { if (lastTrigger && document.contains(lastTrigger)) lastTrigger.focus(); });
+
+/* ---------- Form kontak ---------- */
+$("contactForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("cName").value.trim();
+  const msg = $("cMsg").value.trim();
+  const subject = encodeURIComponent("Pesan dari " + name + " untuk Swadaya Notebook Store");
+  const body = encodeURIComponent(msg + "\n\nSalam,\n" + name);
+  window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+});
+
+/* ---------- Tombol WhatsApp melayang ---------- */
+const fabBtn = $("fabBtn"), fabMenu = $("fabMenu");
+function closeFab() { fabMenu.classList.remove("open"); fabBtn.setAttribute("aria-expanded", "false"); }
+fabBtn.addEventListener("click", () => {
+  const open = fabMenu.classList.toggle("open");
+  fabBtn.setAttribute("aria-expanded", String(open));
+});
+document.addEventListener("click", e => { if (!e.target.closest(".wa-fab")) closeFab(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeFab(); });
+
+/* ---------- Animasi muncul saat scroll ---------- */
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+}
+
+/* ---------- Mulai ---------- */
+showScene("gaming");
+syncFinderButtons();
+renderFinder();
+renderGrid();
+updateCmpBar();
+</script>
+</body>
+</html>
